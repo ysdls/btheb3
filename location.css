@@ -1,0 +1,63 @@
+.visit-info {
+    display: flex;
+}
+.item {
+    width: 50%;
+}
+.item img {
+    width: 100%;
+}
+.map {
+    margin-top: 20px;
+}
+.lc {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.menu-tab {
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    margin-top: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 100px;
+}
+
+.a-text {
+    position: relative;
+    margin-bottom: 100px;
+
+}
+.a-text .txt {
+    padding:  5px;
+    line-height: 1.5;
+}
+
+.s-1 h4 {
+    font-weight: 500;
+    margin: 0 0 2rem;
+    padding-left: 2.2rem;
+    line-height: 1.4;
+}
+
+.s-1 h4::before {
+    position: absolute;
+    content: '';
+    top: 0.6rem;
+    left: 0;
+    width: 1.4rem;
+    height: .1rem;
+    background: #89c955;
+}
+.a-text .txt p:first-child {
+    font-weight: bold;
+}
+.grey {
+    margin-top : 30px;
+    color:gray;
+}
+.margin-100 {
+    margin-top: 100px;
+}

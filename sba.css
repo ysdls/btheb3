@@ -1,0 +1,32 @@
+.design {
+    padding: 20px 0px;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: 1.1px;
+    display: flex;
+    flex-direction: column;
+}
+.design p:first-child {
+    margin-bottom: 30px;
+}
+.design p:nth-child(2) {
+    margin-bottom: 60px;
+}
+.link {
+    background: #468017;
+    padding: 10px;
+    border-radius: 9px;
+    width: 235px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.link a {
+    text-decoration: none;
+    color: white;
+    font-size: .9rem;
+}
+.margin {
+    margin-top: 30px;
+}

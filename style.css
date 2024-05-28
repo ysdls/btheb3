@@ -1,0 +1,172 @@
+
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f8f6f0;
+}
+h1, p, a {
+    margin :0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    transition: background 0.5s ease-in-out;
+    z-index: 10;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+    text-align: center;
+    max-width: 90%;
+    width: 400px;
+}
+
+.popup-content {
+    position: relative;
+}
+
+.popup img {
+    width: 100%;
+    height: 350px;
+    object-position: center;
+    object-fit: cover;
+}
+.popup-text {
+    text-align: left;
+    padding-left: 20px;
+    margin: 20px 0px;
+}
+
+.popup-text p:first-child {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size:1.2rem;
+}
+.popup-text p:nth-child(3) {
+    padding-top:5px;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.popup-buttons button {
+    width: 100%;
+    border-radius: 0;
+    cursor: pointer;
+    border: none;
+    padding: 20px;
+    background-color: black;
+    color: white;
+
+}
+.popup-buttons .today {
+    text-align: left;
+}
+.popup .close {
+    text-align: right;
+}
+
+.popup button:hover {
+    font-weight: bold;
+}
+
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    right: 10px;
+    top: 10px;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3a3a3a;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+} */
+
+.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.sun {
+    left: 8px;
+}
+
+.moon {
+    right: 8px;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+.border {
+    border-bottom: .5px solid #111;
+}

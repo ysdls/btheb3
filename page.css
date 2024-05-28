@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+.container-wapper {
+    position: relative;
+}
+.top  {
+    text-align: center;
+    position: relative;
+    margin-top: 40px;
+    line-height: 1.5;
+    padding-bottom: 60px;
+}
+.top .sub-title {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #b5b5b5;
+}
+.top .title {
+    font-size: 1.3rem;
+    font-weight: bold;
+}

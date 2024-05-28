@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LOUNGE</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="detail.css" />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        />
+    </head>
+    <body>
+        <div class="detail-main">
+            <div class="slider">
+                <div><img src="brand/2405_1.jpg" alt="Image 1" /></div>
+                <div><img src="brand/2405_2_re.jpg" alt="Image 2" /></div>
+                <div><img src="brand/2405_3.jpg" alt="Image 1" /></div>
+                <div><img src="brand/2405_4.jpg" alt="Image 2" /></div>
+            </div>
+            <div class="text">
+                <div class="title">
+                    <p>BRAND LOUNGE</p>
+                    <p>브랜드 라운지</p>
+                    <p>뉴로글로우: 내면에서부터 빛나는 아름다움 / 24.4.30.~6.30.</p>
+                </div>
+                <div class="desc">
+                    <p>
+                        달바의 시그니처 성분인 화이트 트러플과 비거너리의 메인 테이스트 샤인머스켓을 필두로 선보이는
+                        뷰티&헬시 아이템들로 '뉴로글로우' 라이프스타일을 경험해보세요.
+                    </p>
+                    <br />
+                    <p>
+                        NEUROGLOW: Inner beauty that shines from within Experience the "Neuro Glow" lifestyle with
+                        beauty and healthy items from d'Alba'S signature ingredient, white truffle, and Veganery's main
+                        taste Shine Muscat.
+                    </p>
+                </div>
+            </div>
+            <div class="back">
+                <a href="lounge.html">X</a>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        ></script>
+        <script>
+            $(document).ready(function () {
+                $(".slider").slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 300,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            });
+        </script>
+    </body>
+</html>

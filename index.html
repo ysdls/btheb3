@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>btheb</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="index.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        />
+    </head>
+    <body>
+        <div id="header"></div>
+        <div class="container">
+            <div class="overlay"></div>
+            <div class="section"><img class="back" src="main/2403_1.jpg" /></div>
+            <div class="section"><img class="back" src="main/2403_2.jpg" /></div>
+            <div class="section"><img class="back" src="main/2403_3.jpg" /></div>
+            <div class="section"><img class="back" src="main/2405_1.jpg" /></div>
+
+            <div class="pagination">
+                <div class="dot" data-index="0"></div>
+                <div class="dot" data-index="1"></div>
+                <div class="dot" data-index="2"></div>
+                <div class="dot" data-index="3"></div>
+            </div>
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <a href="about-us.html"> <img src="main/2405_1.jpg" alt="Popup Image" /></a>
+
+                <div class="popup-text">
+                    <p>뉴로글로우: 내면에서부터 빛나는 아름다움</p>
+                    <p>기간: 24.4.30 ~ 24.6.30</p>
+                    <p>장소: 브랜드 라운지</p>
+                </div>
+                <div class="popup-buttons">
+                    <button class="today" onclick="doNotShowToday()">오늘 하루 동안 보지 않기</button>
+                    <button class="close" onclick="closePopup()">닫기</button>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        ></script>
+        <script>
+            $(document).ready(function () {
+                $("#header").load("headerMain.html");
+                $("#footer").load("footer.html");
+                $(".slider").slick({
+                    dots: true,
+                    infinite: true,
+                    speed: 300,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                });
+            });
+        </script>
+        <script src="index.js"></script>
+    </body>
+</html>
