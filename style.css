@@ -150,17 +150,28 @@ input:checked + .slider:before {
 
 .icon {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
+}
+.toggle {
+    position: relative;
+    background-color: #39393D;
+    border-radius: 50px;
+}
+.mode img {
+    width: 20px;
 }
 
-.sun {
-    left: 8px;
+.sun  {
+    left: 4px;
+    top: 4px;
+    padding: 3px;
+    background: black;
+    border-radius: 33px;
+    display: flex;
 }
 
-.moon {
-    right: 8px;
+.moon  {
+    right: 6px;
+    top: 6px;
 }
 
 .main {
