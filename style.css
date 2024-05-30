@@ -5,8 +5,9 @@ body, html {
     padding: 0;
     overflow: hidden;
     height: 100%;
-    font-family: Arial, sans-serif;
     background-color: #f8f6f0;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 500;
 }
 h1, p, a {
     margin :0;
@@ -180,4 +181,7 @@ input:checked + .slider:before {
 }
 .border {
     border-bottom: .5px solid #111;
+}
+.pdd {
+    padding-bottom: 120px !important;
 }

@@ -38,17 +38,18 @@ header {
 
 .pagination {
     position: fixed;
-    right: 10px;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     gap: 10px;
+    z-index: 10;
 }
 
 .dot {
     width: 2px;
-    height: 5px;
+    height: 15px;
     background-color: gray;
     border-radius: 5px;
     cursor: pointer;
@@ -56,9 +57,10 @@ header {
 }
 
 .dot.active {
-    background-color: black;
+    background-color: #89c955;
     width: 2px;
-    height: 20px;
+    height: 70px;
+
 }
 
 .container .back {
@@ -81,14 +83,14 @@ nav {
 .menu-item:nth-child(4) {
     margin-top: 30px;
 }
-.menu-item {
+.menu-item , .menu-item2{
     margin: 5px 0;
     font-size: 0.9rem;
     cursor: pointer;
     position: relative;
     padding: 5px 0;
 }
-.menu-item > a {
+.menu-item > a, .menu-item2 > a {
     display: inline-block;
     position: relative;
     text-decoration: none;
@@ -125,4 +127,31 @@ nav {
     color: #fff;
     font-size: 1.5em;
     text-decoration: none;
+}
+
+.container:hover .overlay {
+    background: rgba(0,0,0,0.2);
+}
+
+.message-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    position: fixed;
+    color: white;
+    width: 100%;
+    z-index: 100;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.message {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+    opacity: 1;
 }

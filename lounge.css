@@ -128,7 +128,7 @@
     font-size: 1.2rem;
     text-align: center;
     display: none; /* 초기에는 텍스트를 숨깁니다 */
-    padding: 50px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: stretch;

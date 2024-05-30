@@ -18,6 +18,12 @@
             type="text/css"
             href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <div class="main">
@@ -37,15 +43,15 @@
                         the Seoul Beauty Fashion Lounge at DDP.
                     </p>
                     <div class="title">
-                        <a href="" class="active">전체</a>
-                        <a href="">브랜드라운지</a>
-                        <a href="">테크라운지</a>
-                        <a href="">커뮤니케이션라운지</a>
+                        <a href="#" class="tab-link active" id="all">전체</a>
+                        <a href="#" class="tab-link" id="brand">브랜드라운지</a>
+                        <a href="#" class="tab-link" id="tech">테크라운지</a>
+                        <a href="#" class="tab-link" id="comm">커뮤니케이션라운지</a>
                     </div>
                 </div>
-                <div class="container-wapper border">
+                <div class="container-wapper border pdd">
                     <div class="banner-wapper">
-                        <div class="lounge">
+                        <div class="lounge all tech">
                             <div class="overlay-banner">
                                 <p>브랜드 홍보 문구</p>
                             </div>
@@ -56,7 +62,7 @@
                                 <p class="banner-name">글로벌의학연구센터</p>
                             </a>
                         </div>
-                        <div class="lounge">
+                        <div class="lounge all tech">
                             <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
                             <a href="https://www.nuegray.kr/" class="banner" target="_blank">
                                 <div class="banner-image">
@@ -65,7 +71,7 @@
                                 <p class="banner-name">누그레이</p>
                             </a>
                         </div>
-                        <div class="lounge">
+                        <div class="lounge all brand">
                             <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
                             <a href="https://dalba.co.kr/" class="banner" target="_blank">
                                 <div class="banner-image">
@@ -74,7 +80,7 @@
                                 <p class="banner-name">달바</p>
                             </a>
                         </div>
-                        <div class="lounge">
+                        <div class="lounge all tech comm">
                             <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
                             <a href="https://deeponde.com/" class="banner" target="_blank">
                                 <div class="banner-image">
@@ -83,13 +89,456 @@
                                 <p class="banner-name">디폰데</p>
                             </a>
                         </div>
-                        <div class="lounge">
+                        <div class="lounge all tech">
                             <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
                             <a href="https://deepscent.shop/" class="banner" target="_blank">
                                 <div class="banner-image">
                                     <img src="banner/deepscent.png" alt="" />
                                 </div>
                                 <p class="banner-name">딥센트</p>
+                            </a>
+                        </div>
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://thimbeauty.com/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/thim.png" alt="" />
+                                </div>
+                                <p class="banner-name">띰</p>
+                            </a>
+                        </div>
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://www.lagom.kr/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/lagom.png" alt="" />
+                                </div>
+                                <p class="banner-name">라곰</p>
+                            </a>
+                        </div>
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://www.labiora.co.kr/index.html" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/labiora.png" alt="" />
+                                </div>
+                                <p class="banner-name">라비오라</p>
+                            </a>
+                        </div>
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://brand.naver.com/lapitta" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/lapitta.png" alt="" />
+                                </div>
+                                <p class="banner-name">라피타</p>
+                            </a>
+                        </div>
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://lulu-lab.com/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/lululap.png" alt="" />
+                                </div>
+                                <p class="banner-name">룰루랩</p>
+                            </a>
+                        </div>
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://www.menokin.co.kr/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/menokin_n.png" alt="" />
+                                </div>
+                                <p class="banner-name">메노킨</p>
+                            </a>
+                        </div>
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://mooasi.com/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/mooasi.png" alt="mooasi" />
+                                </div>
+                                <p class="banner-name">무아시</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://mirart.co.kr/home/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/Mirart.png" alt="Mirart" />
+                                </div>
+                                <p class="banner-name">미라트</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://milktouch.co.kr/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/milktouch.png" alt="milktouch" />
+                                </div>
+                                <p class="banner-name">밀크터치</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://bartera.uk/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/bartera.png" alt="bartera" />
+                                </div>
+                                <p class="banner-name">바르테라</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://vanitable.co.kr/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/vanitable_n.png" alt="vanitable" />
+                                </div>
+                                <p class="banner-name">베니테이블</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://www.vt-cosmetics.com/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/vt-cosmetics.png" alt="vt-cosmetics" />
+                                </div>
+                                <p class="banner-name">브이티 코스메틱</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://www.bluechemistry.store/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/bluechemistry.png" alt="bluechemistry" />
+                                </div>
+                                <p class="banner-name">블루케미스트리</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://brand.naver.com/skin1004" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/skin1004.png" alt="skin1004" />
+                                </div>
+                                <p class="banner-name">스킨1004</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://artlab.ai/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/skinchat.png" alt="skinchat" />
+                                </div>
+                                <p class="banner-name">스킨챗</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://www.theskinfood.com/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/skinfood.png" alt="skinfood" />
+                                </div>
+                                <p class="banner-name">스킨푸드</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="http://skinfitcosmetic.com" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/SkinFit.png" alt="SkinFit" />
+                                </div>
+                                <p class="banner-name">스킨핏</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://www.stylear.ai" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/StyleAR.png" alt="StyleAR" />
+                                </div>
+                                <p class="banner-name">스타일AR</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://www.slosophy.com/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/slosophy.png" alt="slosophy" />
+                                </div>
+                                <p class="banner-name">슬로소피</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://shimoment.co.kr/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/shimoment.png" alt="shimoment" />
+                                </div>
+                                <p class="banner-name">시모먼트</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://chicholique.kr/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/chicholique.png" alt="chicholique" />
+                                </div>
+                                <p class="banner-name">시크홀릭</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://www.atelierfaye.co.kr/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/atelierfaye.png" alt="atelierfaye" />
+                                </div>
+                                <p class="banner-name">아뜰리에 페이</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://artesinsa.com/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/artesinsa.png" alt="artesinsa" />
+                                </div>
+                                <p class="banner-name">아르떼신사</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://icon.ai/amazon-alexa/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/icon.png" alt="icon.ai" />
+                                </div>
+                                <p class="banner-name">아이콘에이아이</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://aulmoment.com/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/aul_moment.png" alt="aul_moment" />
+                                </div>
+                                <p class="banner-name">어울모먼트</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://www.f-diary.com/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/f-diary.png" alt="f-diary" />
+                                </div>
+                                <p class="banner-name">에프다이어리</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://efilow.com/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/efilow.png" alt="efilow" />
+                                </div>
+                                <p class="banner-name">에필로우</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://medivelbio.co.kr/ko" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/WAVU.png" alt="WAVU" />
+                                </div>
+                                <p class="banner-name">웨이뷰</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://www.withbecon.com/product-list" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/withbecon.png" alt="withbecon" />
+                                </div>
+                                <p class="banner-name">위드비컨</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://equlib.com/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/equlib_n.png" alt="equlib" />
+                                </div>
+                                <p class="banner-name">이퀄리브</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://1159.company/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/1159n.png" alt="1159" />
+                                </div>
+                                <p class="banner-name">일일오구</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://trulab.co.kr/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/trulab.png" alt="trulab" />
+                                </div>
+                                <p class="banner-name">정직한실험실</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://www.gesgep.com/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/gesgep.png" alt="gesgep" />
+                                </div>
+                                <p class="banner-name">제스젭</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://www.chi-moment.com/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/chi.png" alt="chi" />
+                                </div>
+                                <p class="banner-name">취 CHI</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://www.coverseoul.kr/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/coverseoul.png" alt="coverseoul" />
+                                </div>
+                                <p class="banner-name">커버서울</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://cosnori.com/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/cosnori.png" alt="cosnori" />
+                                </div>
+                                <p class="banner-name">코스노리</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://www.cosrx.co.kr/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/cosrx.png" alt="cosrx" />
+                                </div>
+                                <p class="banner-name">코스알엑스</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://vrchronotope.com/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/CHRONOTOPE.png" alt="CHRONOTOPE" />
+                                </div>
+                                <p class="banner-name">크로노토프</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://www.tense.co.kr/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/tense.png" alt="tense" />
+                                </div>
+                                <p class="banner-name">텐스</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="http://www.topolog.co.kr/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/TOPOLOG.png" alt="TOPOLOG" />
+                                </div>
+                                <p class="banner-name">토포로그</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://tiabofficial.com/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/tiab.png" alt="tiabofficial" />
+                                </div>
+                                <p class="banner-name">티아브</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://www.prinker.net/products/prinker" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/prinker.png" alt="prinker" />
+                                </div>
+                                <p class="banner-name">프링커</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://smartstore.naver.com/feev" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/feev.png" alt="feev" />
+                                </div>
+                                <p class="banner-name">피브</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all comm">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://hamelbeauty.com/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/hamel.png" alt="hamel" />
+                                </div>
+                                <p class="banner-name">하멜</p>
+                            </a>
+                        </div>
+
+                        <div class="lounge all tech">
+                            <div class="overlay-banner"><p>브랜드 홍보 문구</p></div>
+                            <a href="https://www.huecalm.com/" class="banner" target="_blank">
+                                <div class="banner-image">
+                                    <img src="banner/huecalm.png" alt="huecalm" />
+                                </div>
+                                <p class="banner-name">휴캄</p>
                             </a>
                         </div>
                     </div>
@@ -113,6 +562,32 @@
                 // });
             });
         </script>
-        <!-- <script src="index.js"></script> -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const tabs = document.querySelectorAll(".tab-link");
+                const lounges = document.querySelectorAll(".lounge");
+
+                tabs.forEach((tab) => {
+                    tab.addEventListener("click", function (e) {
+                        e.preventDefault(); // 링크 기본 동작 방지
+                        tabs.forEach((t) => t.classList.remove("active")); // 모든 탭에서 'active' 클래스 제거
+                        this.classList.add("active"); // 클릭된 탭에 'active' 클래스 추가
+
+                        const loungeType = this.id; // 클릭된 탭의 id
+                        lounges.forEach((lounge) => {
+                            if (loungeType === "all") {
+                                lounge.style.display = ""; // 모든 라운지 보이기
+                            } else {
+                                if (lounge.classList.contains(loungeType)) {
+                                    lounge.style.display = ""; // 해당 라운지만 보이기
+                                } else {
+                                    lounge.style.display = "none"; // 나머지는 숨기기
+                                }
+                            }
+                        });
+                    });
+                });
+            });
+        </script>
     </body>
 </html>
