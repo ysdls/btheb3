@@ -57,7 +57,35 @@
 .desc p:first-child {
     padding-top: 20px;
     font-size: 0.9rem;
+    font-weight: 400;
 }
 .desc p:last-child {
     font-size: 0.9rem;
+    font-weight: 400;
+
+}
+
+.slick-prev {
+    left: 25px !important;
+    z-index: 1;
+    background: url('left-arrow.png') no-repeat center center;
+    background-size: contain;
+    width: 30px; /* 이미지 크기에 맞게 조정 */
+    height: 50px; /* 이미지 크기에 맞게 조정 */
+}
+.slick-next {
+    right: 25px !important;
+    z-index: 1;
+    background: url('right-arrow2.png') no-repeat center center;
+    background-size: contain;
+    width: 30px; /* 이미지 크기에 맞게 조정 */
+    height: 50px; /* 이미지 크기에 맞게 조정 */
+}
+
+.slick-prev:before,
+.slick-next:before {
+    content: '';
+}
+.slick-dots {
+    bottom: 25px;
 }

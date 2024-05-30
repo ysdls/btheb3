@@ -119,5 +119,5 @@
 
 .tab-link.active {
     text-decoration: underline; /* 활성 탭에 밑줄 */
-    text-decoration-color: blue; /* 밑줄 색상 지정 */
+    text-decoration-color: black; /* 밑줄 색상 지정 */
 }
